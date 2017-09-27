@@ -219,7 +219,7 @@ void csvReweight(bool isHF=1, int insample=1, int reportEvery=100000) {
  //Load the .csv file containing the SFs using BTagCalibration Standalone tool
  //=================================================================================================================================
   
-  ///========Solution section of code (1 of 3)=========
+  ///========Solution section of code (2 of 3)=========
   
   std::cout << "===> Loading the input .csv SF file..." << std::endl;
   
@@ -236,7 +236,7 @@ void csvReweight(bool isHF=1, int insample=1, int reportEvery=100000) {
   
   std::cout << "\tInput CSV weight file = " << inputCSVfile << "; measurementType = " << measType << "; sysType = " << sysType << std::endl;
   
-  ///========End of solution section of code (1 of 3)=========
+  ///========End of solution section of code (2 of 3)=========
   
   //Working points of CSV
   
@@ -364,7 +364,7 @@ void csvReweight(bool isHF=1, int insample=1, int reportEvery=100000) {
 	
 	double newCSVwgt = 1.;
 	
-	///========Solution section of code (2 of 3)=========
+	///========Solution section of code (3 of 3)=========
 	
     // Using BTagCalibrationReader
 
@@ -398,7 +398,7 @@ void csvReweight(bool isHF=1, int insample=1, int reportEvery=100000) {
     
     newCSVwgt = csvWgtTotal;
     
-    ///========End of solution section of code (2 of 3)=========   
+    ///========End of solution section of code (3 of 3)=========   
     
     wgt *= newCSVwgt;
 
